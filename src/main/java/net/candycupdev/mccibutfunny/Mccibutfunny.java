@@ -1,7 +1,7 @@
 package net.candycupdev.mccibutfunny;
 
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.client.realms.dto.PlayerInfo;
+import net.minecraft.client.MinecraftClient;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ public class Mccibutfunny implements ModInitializer {
     public static String formatting = "§c§l";
     @Override
     public void onInitialize() {
-        String playerName = new PlayerInfo().getName();
+        String playerName = MinecraftClient.getInstance().player.getName().getString();
         goofyAssDeathMessages.add(formatting + "L + Ratio");
         goofyAssDeathMessages.add(formatting + "☠");
         goofyAssDeathMessages.add(formatting + "nemvevo is better");
