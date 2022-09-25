@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "mccibutfunny",
+  "version": "vtestbuild1",
+  "name": "Mccibutfunny",
+  "description": "MCCi but funny",
+  "authors": [
+    "CandycupDev"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.candycupdev.mccibutfunny.client.MccibutfunnyClient"
+    ],
+    "main": [
+      "net.candycupdev.mccibutfunny.Mccibutfunny"
+    ]
+  },
+  "mixins": [
+    "mccibutfunny.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
